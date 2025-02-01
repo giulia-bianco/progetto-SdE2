@@ -5,10 +5,11 @@ import geopandas as gpd
 
 url = "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/isoc_ci_in_h?format=TSV&compressed=true"
 
+url_edu = "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/t_educ.t_educ_outc?format=TSV&compressed=true"
+
 st.write(""" # Utilizzo di Internet nei paesi dell'Unione Europea """)
 
 # pulizia dei dati con polars
-# il dataset originale non è "tidy"
 data = (
     pl
     .read_csv(url, separator="\t", null_values=["", ":", ": "])
@@ -30,5 +31,12 @@ data = (
 .str.replace_all(r'\D', '')
 .str.replace_all("", "0")
 .cast(pl.Float64),
-    )    
+    )   
+.pivot(on="unit", values="internet_use")
+.filter(pl.col("hhtype") == "TOTAL")
 )
+
+data.drop("hhtype")
+data.drop("freq")
+st.write(data)
+

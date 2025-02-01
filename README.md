@@ -12,7 +12,7 @@ Gli obiettivi di questo progetto sono:
 ### Struttura del progetto
 Il file "app.py" contiene il codice dell'applicazione streamlit, i file pyproject.toml e uv.lock sono generati dalla libreria uv. Per avviare l'applicazione è necessario eseguire il comando "uv run streamlit run app.py".
 
-### librerie utilizzate
+### Librerie utilizzate
 - polars, per la pulizia dei dati
 - streamlit, per la generazione dell'applicazione web
 - altair, per la visualizzazione dei dati
@@ -23,4 +23,4 @@ I dati analizzati provengono da un dataset pubblicato da Eurostat, l'ufficio sta
 
 
 ## Conclusioni
-
+L'utilizzo di Internet da parte delle famiglie europee è aumentato nel corso degli ultimi due decenni, fino a diventare un fenomeno quasi universale nel continente. Nonostante questo dato incoraggiante ci sono ancora nazioni in cui la percentuale è inferiore al 90%, sopratutto nella regione sud orientale.
