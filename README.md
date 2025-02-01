@@ -4,8 +4,7 @@
 ## Scopo del progetto
 Gli obiettivi di questo progetto sono:
 1. lo sviluppo di una semplice applicazione web che permetta di visualizzare i dati relativi all'accesso ad Internet nei paesi dell'Unione Europea
-2. l'analisi descrittiva dei dati per determinare l'evoluzione dell'utilizzo di Internet dal 2002 al 2024, anche in relazione al livello di istruzione della popolazione
-
+2. l'analisi descrittiva dei dati per determinare l'evoluzione dell'utilizzo di Internet dal 2002 al 2024
 
 ## Metodologia
 
